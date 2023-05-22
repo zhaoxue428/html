@@ -1,0 +1,121 @@
+html study~0522(~p32)
+list
+>>important
+>>注释
+>>标签
+
+##important
+>>! + enter  --create gujia
+>>alt + b  --(html)open in liulanqi
+>>alt + z  --zidonghuanhang
+>>shift + 左右上下键; ctrl + d  --kuaijiejian used to delete the number quickly
+>>windows + d  --back to des
+>>./  --可以看到当前位置下的文件，输入./后方便快速定位具体文件
+##注释
+>>in vscode is ctrl + /
+##标签
+双标签(开始和结束)；单标签
+父子关系标签；兄弟关系标签
+list
+>>排版标签
+>>文本格式化标签
+>>媒体标签
+###排版标签
+>>标题标签:h系列标签1~6
+  in vscode is h1 enter
+  kuaijiejian used to delete the number quickly : shitf + 左右上下键; ctrl + d
+>>段落标签:<p>...<p>  --一段文字
+  in vscode is p enter
+>>换行标签:<br>
+  in vscode is br enter  --but should put 2 kongge (before and end) of br
+>>水平分割线标签:<hr>
+  in vscode is hr enter
+###文本格式化标签
+文字加粗，下划线，倾斜，删除线等效果
+两套代码:b/u/i/s;strong/ins/em/del  --右边代码强调语义
+###媒体标签
+>>图片标签:<img src="" alt="">
+  <img src="./1.jpg" alt="" title="">  --./ is where you are表示当前的意思；加或者不加./
+  in vscode is img enter
+  ex:<img src="picture1.png">
+  >>>>alt属性  --替换文本
+  >>>>title属性  --当鼠标悬停时，才显示的文本
+    >>>>width and height  --宽和高；width和weight属性只需要给出一个值，另一个等比例缩放 -- 好处就是图片不变形
+>>路径:页面需要加载图片，需要先找到对应的图片
+  绝对路径和相对路径(常用) 
+  >>>>绝对路径:从盘符开始  --like C:\Users\zhaoxue\Desktop\htmlcode
+                        --并且补充完整:C:\Users\zhaoxue\Desktop\htmlcode\picture1.png
+  >>>>相对路径-同级目录:从当前文件开始；当前文件和目标文件在同一目录中
+    <img scr="目标图片.gif">
+   >>>>相对路径-下级目录:<img src="images/目标图片.gif">
+  >>>>相对路径-上级目录:../  --先出当前文件夹，到上一级目录
+    ex: <img src="../picture1.png" alt="">
+>>音频标签:<audio src="./music.mp3" controls></audio>
+  in vscode is audio enter
+  >>>>src  --音频的路径
+  >>>>autoplay  --自动播放
+    >>>>controls    --显示播放的控件
+>>视频标签:<video src="./video.mp4" controls></video>
+    <video src="./video.mp4" controls autoplay muted loop></video>
+    in vscode is video enter
+  >>>>autoplay-muted  --谷歌浏览器中需要配合muted实现静音
+    >>>>src/controls/autoplay-muted/loop
+>>链接标签:<a href="./目标网页.html">超链接</a>  --href后面跟着跳转的地址
+    in vscode is a enter
+    ex:<a href="https://www.baidu.com/">跳转到百度</a>
+   ex  all code:
+  <!-- href : 跳转地址 -->
+  <a href="https://www.baidu.com/"target="_blank">跳转到百度</a>
+    
+  <br>
+    
+  <a href="./01-标题标签.html">点我呀，点了就去01-标题标签</a>
+    
+  <!-- 当开发网站初期，我们还不知道跳转地址的时候，href的值书写#(空连接) -->
+
+  <!-- br : 换行 -->
+
+  <br>
+
+  <a href="#">空链接，不知道跳到哪里去</a>
+    >>>>链接标签的target属性  --_self;_blank(保留原网页)
+  >>>>当开发网站初期，我们还不知道跳转地址的时候，href的值书写#(空连接)
+
+
+从下面开始快速听课和记笔记(p25~)
+##目录list
+1.列表标签
+2.表格标签
+3.表单标签
+4.语义化标签
+5.字符实体
+6.综合案例
+
+##列表标签
+>>无序列表:外部<ul>..<ul>;内部<li>..<li>  --ex:・榴莲
+        ul里面只允许包含li；li里面可以包含任意
+>>有序列表:外部<ol>..<ol>;内部<li>..<li>  --ex:1;2;3;
+     ol里面只允许包含li；li里面可以包含任意
+>> 自定义列表:<dt>..<dt>;内部<dd>..<dd>
+>>表格标签:table>tr>td  --表格；行；单元格
+>>>>表格相关属性(table):border;width;height
+>>>>表格标题标签-caption；表头单元格标签-th  
+
+##表单标签
+登录;注册;搜索时用
+>>学习list
+1.input
+2.button
+3.select
+4.textarea
+5.lable
+ 
+>>input
+根据type属性值的不同，显示不同效果
+>>>>input(text/password/radio/checkbox/file/submit/reset )
+    in vscode is input enter
+ex:<body>
+    <!-- 写什么就显示什么 -->
+    文本框:<input type="text">
+</body>  --提示框->文本框: 
+
